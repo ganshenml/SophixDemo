@@ -23,4 +23,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="这是第三个补丁包，基于第二个补丁包的apk作为旧包来生成的补丁" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/popBtn"
+        android:text="弹窗" />
 </LinearLayout>

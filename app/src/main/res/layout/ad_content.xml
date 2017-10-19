@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:id="@+id/contentFl"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/contentIv"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ad_circle_round" />
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:id="@+id/loadPb"
+            style="@style/Base.Widget.AppCompat.ProgressBar"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contentFl"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+             />
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/crossIv"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@mipmap/ic_cross" />
+    </LinearLayout>
+</RelativeLayout>
